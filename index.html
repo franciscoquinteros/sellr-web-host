@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/sellr-web-host/">
+  <base href="/"> <!-- Asegúrate de reemplazar esto con el nombre de tu repositorio -->
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="sellr">
-  <meta name="google-signin-client_id" content="1024340623832-kqlucnid5glurl75tqorkhlenk7d31pg.apps.googleusercontent.com">
-  <!-- <link rel="apple-touch-icon" href="icons/Icon-192.png"> -->
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <title>SELLR</title>
   <link rel="manifest" href="manifest.json">
+  <meta name="google-signin-client_id" content="1024340623832-kqlucnid5glurl75tqorkhlenk7d31pg.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <script>
-    const serviceWorkerVersion = "1390040850";
+    const serviceWorkerVersion = "1860048705";
   </script>
-  <script src="flutter.js" defer=""></script>
+  <script src="flutter.js" defer></script>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <style id="splash-screen-style">
     html {
@@ -82,48 +83,42 @@
 </head>
 <body>
   <script>
-   window.addEventListener('load', function(ev) {
-  _flutter.loader.loadEntrypoint({
-    serviceWorker: {
-      serviceWorkerVersion: serviceWorkerVersion,
-    },
-    onEntrypointLoaded: function(engineInitializer) {
-      engineInitializer.initializeEngine().then(function(appRunner) {
-        appRunner.runApp();
-      }).catch(function(error) {
-        console.error('Error initializing engine: ', error);
+    window.addEventListener('load', function(ev) {
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
       });
-    }
-  }).catch(function(error) {
-    console.error('Error loading entrypoint: ', error);
-  });
-});
+    });
   </script>
-
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBMpUHvGSuQcuEnGVaapsw9EFnBgBWjHvY",
-    authDomain: "sellr-d84bf.firebaseapp.com",
-    databaseURL: "https://sellr-d84bf-default-rtdb.firebaseio.com",
-    projectId: "sellr-d84bf",
-    storageBucket: "sellr-d84bf.appspot.com",
-    messagingSenderId: "1024340623832",
-    appId: "1:1024340623832:web:3595dea9c6e869245bf2ad",
-    measurementId: "G-7CHLN23R56"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
   
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBMpUHvGSuQcuEnGVaapsw9EFnBgBWjHvY",
+      authDomain: "sellr-d84bf.firebaseapp.com",
+      databaseURL: "https://sellr-d84bf-default-rtdb.firebaseio.com",
+      projectId: "sellr-d84bf",
+      storageBucket: "sellr-d84bf.appspot.com",
+      messagingSenderId: "1024340623832",
+      appId: "1:1024340623832:web:393008c2854aaacd5bf2ad",
+      measurementId: "G-3V9D27516W"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>

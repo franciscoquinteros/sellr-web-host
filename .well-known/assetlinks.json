@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sellrnow.sellr",
+      "sha256_cert_fingerprints":
+        ["65:9F:10:AA:4A:C1:04:E8:3F:D0:07:D4:24:93:96:86:00:80:60:55:1F:9D:F9:91:D5:C8:15:1E:CA:7C:7C:0E"]
+    }
+  }
+]

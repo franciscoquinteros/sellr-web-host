@@ -19,10 +19,10 @@
     const serviceWorkerVersion = "1533576471";
     // Redirección
     window.addEventListener('DOMContentLoaded', (event) => {
-      if (window.location.pathname.startsWith('/event/')) {
-        window.location.href = '/';
-      }
-    });
+  if (window.location.pathname.startsWith('/event/')) {
+    window.location.href = window.location.origin;
+  }
+});
   </script>
   <script src="flutter.js" defer></script>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
